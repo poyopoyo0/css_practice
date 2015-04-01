@@ -1,17 +1,18 @@
 /* ここにcssを書いてみましょう */
 #html {
-  background: gray;
+  background: white;
 }
 
 #wrap {
+  background: white;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px, white 0 0 3px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px, white 0 0 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px, white 0 0 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px, black 0 0 3px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px, black 0 0 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px, black 0 0 3px inset;
   overflow: hidden;
 }
 
@@ -32,6 +33,10 @@
   border-radius: 8px;
 }
 
+#header nav#global ul li a:link {
+  text-decoration: none;
+}
+
 #body{
   height: 100%;
   font-family: Verdana, Arial;
@@ -49,7 +54,6 @@ body > #wrap {
   width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
-
 }
 
 #header {
@@ -73,15 +77,28 @@ body > #wrap {
   text-align: center;
 }
 
+#about ol li {
+/*  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;*/
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px, black 0 0 3px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px, black 0 0 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px, black 0 0 3px inset;
+}
+
 #comments{
-  display: inline-block;
+  /*display: inline-block;*/
   width: 250px;
 }
 
 #comments ul>li {
   display: inline-block;
-  width: 250px;
+  width: 220px;
   font-size: 11px;
+/*  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px, black 0 0 3px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px, black 0 0 3px inset;*/
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px, black 0 0 3px inset;
 }
 
 #sub {
@@ -93,7 +110,7 @@ body > #wrap {
   margin-bottom: -10000px*/
 }
 #sub .ad {
-  background: white;
+  background: green;
   height: 180px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -103,30 +120,34 @@ body > #wrap {
   margin: 0 0 10px 0;
 }
 #sub nav#local ul {
-  border-bottom: #dddddd solid 1px;
-  margin: 0 0 10px 0;
+  margin: 0 0 0 0;
 }
 #sub nav#local ul li a {
   display: block;
-  background: #e9e9e9;
+  background: gray;
   line-height: 20px;
-  padding: 20px 8px 4px 8px;
-  border-top: #dddddd solid 1px;
+  padding: 8px 8px 8px 8px;
+/*  border-top: #dddddd solid 1px;
   border-left: #dddddd solid 1px;
-  border-right: #dddddd solid 1px;
+  border-right: #dddddd solid 1px;*/
   -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 1px inset;
   -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 1px inset;
   box-shadow: rgba(255, 255, 255, 0.4) 0 1px 1px inset;
-  text-align: right;
+  text-align: center;
   text-decoration: none;
 }
 
 #sub .banners {
   display: inline-block;
+  text-decoration: none;
 }
 
 #sub .banners ul>li{
   display: inline-block;
+}
+
+#sub .banners ul li a:link {
+  text-decoration: none;
 }
 
 #about ol>li {
@@ -149,10 +170,15 @@ body > #wrap {
   overflow: hidden;
   float: right;
   width: 900px;
-  margin-left: 50px;
+  margin-left: 10px;
   font-size: 18px;
+  border-bottom: #dddddd solid 1px;
+  border-left: #dddddd solid 1px;
 }
 
+#articles ul li {
+  display: inline-block;  
+}
 #main .breadcrumbs ol>li {
   display: inline-block;
   /*margin-left: 50px;*/
@@ -178,6 +204,10 @@ body > #wrap {
   /*margin-right: 4px;*/
   border-radius: 4px;
   text-shadow: 0 1px 0 #fff;
+}
+
+#footer nav ul li a:link {
+  text-decoration: none;
 }
 
 #footer .copyright {
