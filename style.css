@@ -58,6 +58,7 @@ border-spacing: 0;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px, black 0 0 3px inset;
   box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px, black 0 0 3px inset;
   overflow: hidden;
+  line-height: 30px;
 }
 
 #header {
@@ -153,7 +154,7 @@ body > #wrap {
   display: inline-block;
   overflow: scroll;
   width: 250px;
-  height: 600px;
+  height: 800px;
 }
 
 #comments ul>li {
@@ -239,6 +240,7 @@ body > #wrap {
   font-size: 18px;
   border-bottom: #dddddd solid 1px;
   border-left: #dddddd solid 1px;
+  margin-bottom: 30px;
 }
 
 #articles ul li {
@@ -281,5 +283,6 @@ body > #wrap {
   font-size: 15px;
   text-align: center;
   margin-top: 10px;
+  line-height: 70px;
   border-top: 1px solid black;
 }
